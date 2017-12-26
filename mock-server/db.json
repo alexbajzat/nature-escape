@@ -1,0 +1,56 @@
+{
+	"posts": [
+    { "id": 1, "title": "Muntii Bucegi",
+    "author": "Iosif", 
+ 	"image":"",  
+ 	"description" : "" },
+
+    { "id": 2,
+    "title": "Baisoara",
+    "author": "Mircea",
+ 	"image":"",
+ 	"description" : "" },
+
+    { "id": 3,
+     "title": "Muntii retezat",
+     "author": "Marcel",
+     "image":"",
+     "description" : ""},
+
+    { "id": 4, 
+    "title": "Parang", 
+	"author": "Andrei" , 
+	"image":"",
+	"description" : ""},
+
+    { "id": 5, 
+    "title": "Cascada Urlatoarea", 
+	"author": "UNESCO" , 
+	"image":"", 
+	"description" : ""},
+
+    { "id": 6, 
+    "title": "Platoul Babele", 
+	"author": "Andrei Ionut", 
+	"image":"", 
+	"description" : ""},
+
+    { "id": 7, 
+    "title": "Arieseni", 
+	"author": "Calin" , 
+	"image":"", 
+	"description" : ""},
+
+    { "id": 8, 
+    "title": "Marea Neagra", 
+	"author": "Mircea" ,
+	"image":"", 
+	"description" : ""}
+  ],
+
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  
+  "profile": { "name": "Mock Name", "email": "mock@mockmail.com", "gender": "male", "level": "rookie"}
+}
