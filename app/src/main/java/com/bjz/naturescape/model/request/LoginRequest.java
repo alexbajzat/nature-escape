@@ -1,4 +1,4 @@
-package com.bjz.naturescape.model.login;
+package com.bjz.naturescape.model.request;
 
 /**
  * Created by bjz on 10/23/2017.

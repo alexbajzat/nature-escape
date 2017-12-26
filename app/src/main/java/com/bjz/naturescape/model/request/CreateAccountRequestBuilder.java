@@ -1,4 +1,4 @@
-package com.bjz.naturescape.model.register;
+package com.bjz.naturescape.model.request;
 
 import com.bjz.naturescape.utils.Objects;
 

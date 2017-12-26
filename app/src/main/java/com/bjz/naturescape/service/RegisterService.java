@@ -1,6 +1,6 @@
 package com.bjz.naturescape.service;
 
-import com.bjz.naturescape.model.register.CreateAccountRequest;
+import com.bjz.naturescape.model.request.CreateAccountRequest;
 
 import retrofit2.Call;
 import retrofit2.http.Body;

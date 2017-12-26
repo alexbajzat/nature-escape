@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 import com.bjz.naturescape.R;
 import com.bjz.naturescape.component.ComponentApplication;
-import com.bjz.naturescape.model.login.LoginRequest;
+import com.bjz.naturescape.model.request.LoginRequest;
 import com.bjz.naturescape.service.LoginService;
 
 import javax.inject.Inject;
