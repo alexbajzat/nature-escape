@@ -16,7 +16,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 @Module
 public class AppConfig {
-    private static final String mBaseURL = "http://192.168.0.65:3000";
+    public static final String baseURL = "http://192.168.0.65:3000";
+    public static final String baseResourcesURL = baseURL + "/resources/";
 
     @Provides
     @Singleton
@@ -32,7 +33,7 @@ public class AppConfig {
     static Retrofit provideRetrofit(Gson gson) {
         return new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .baseUrl(mBaseURL)
+                .baseUrl(baseURL)
                 .build();
     }
 }

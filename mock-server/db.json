@@ -1,8 +1,9 @@
 {
 	"posts": [
-    { "id": 1, "title": "Muntii Bucegi",
+    { "id": 1, 
+    "title": "Muntii Bucegi",
     "author": "Iosif", 
- 	"image":"",  
+ 	"image":"profile-logo.jpg",  
  	"description" : "" },
 
     { "id": 2,
@@ -52,5 +53,5 @@
     { "id": 1, "body": "some comment", "postId": 1 }
   ],
   
-  "profile": { "name": "Mock Name", "email": "mock@mockmail.com", "gender": "male", "level": "rookie"}
+  "profile": { "name": "Mock Name", "email": "mock@mockmail.com", "gender": "male", "level": "rookie", "image" : "profile-logo.jpg"}
 }

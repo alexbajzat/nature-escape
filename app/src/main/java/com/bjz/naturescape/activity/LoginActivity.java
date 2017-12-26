@@ -35,6 +35,10 @@ public class LoginActivity extends AppCompatActivity {
         ((ComponentApplication) getApplication()).getmNetComponent().inject(LoginActivity.this);
         initLoginButton();
         loginService = retrofit.create(LoginService.class);
+
+        //TODO remove this
+        doLogin();
+
     }
 
     private void initLoginButton() {
@@ -52,8 +56,14 @@ public class LoginActivity extends AppCompatActivity {
         EditText username = (EditText) findViewById(R.id.login_user_name_field);
         EditText password = (EditText) findViewById(R.id.login_user_password_field);
 
+
         String usernameParsed = username.getText().toString();
         String passwordParsed = password.getText().toString();
+
+        //TODO remove this, dev scope
+        usernameParsed = "mock";
+        passwordParsed = "mockpass";
+
         if (usernameParsed.isEmpty() || passwordParsed.isEmpty()) {
             Toast.makeText(this, "Please fill all the fields!", Toast.LENGTH_LONG).show();
         }

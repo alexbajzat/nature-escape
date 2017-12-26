@@ -31,12 +31,6 @@ public class HomeActivity extends FragmentActivity {
         postsFragment = new PostsFragment();
         profileFragment = new ProfileFragment();
 
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager()
-                .beginTransaction()
-                .add(R.id.main_content_fragment, postsFragment)
-                .add(R.id.main_content_fragment, profileFragment);
-
-
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -45,10 +39,12 @@ public class HomeActivity extends FragmentActivity {
 
                 switch (item.getItemId()) {
                     case R.id.action_home:
-                        fragmentTransaction.replace(R.id.main_content_fragment, postsFragment);
+                        fragmentTransaction.replace(R.id.main_content_fragment, postsFragment)
+                                .commit();
                         break;
                     case R.id.action_profile:
-                        fragmentTransaction.replace(R.id.main_content_fragment, profileFragment);
+                        fragmentTransaction.replace(R.id.main_content_fragment, profileFragment)
+                                .commit();
                         break;
                     case R.id.action_settings:
                         break;
