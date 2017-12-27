@@ -42,11 +42,9 @@ public class HomeActivity extends FragmentActivity {
                         fragmentTransaction.replace(R.id.main_content_fragment, postsFragment)
                                 .commit();
                         break;
-                    case R.id.action_profile:
+                    case R.id.action_favourited:
                         fragmentTransaction.replace(R.id.main_content_fragment, profileFragment)
                                 .commit();
-                        break;
-                    case R.id.action_settings:
                         break;
                 }
                 return true;

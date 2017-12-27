@@ -6,6 +6,7 @@ package com.bjz.naturescape.model;
 
 public class Post {
     private int id;
+    private boolean addedToFavourite;
     private String title;
     private String author;
     private String image;
@@ -17,6 +18,14 @@ public class Post {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public boolean isAddedToFavourite() {
+        return addedToFavourite;
+    }
+
+    public void setAddedToFavourite(boolean addedToFavourite) {
+        this.addedToFavourite = addedToFavourite;
     }
 
     public String getTitle() {
