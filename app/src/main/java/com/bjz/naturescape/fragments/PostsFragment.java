@@ -12,10 +12,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
@@ -46,6 +50,7 @@ public class PostsFragment extends Fragment {
     private RecyclerView.LayoutManager layoutManager;
     private FloatingActionButton addToFavActionButton;
     private Toolbar toolbar;
+    private SearchView searchView;
 
     public PostsFragment() {
         // Required empty public constructor
@@ -76,6 +81,7 @@ public class PostsFragment extends Fragment {
         fetchAllPosts();
         return inflate;
     }
+
 
     public void updatePost(Post post) {
         Call<Post> call = postService.updatePost(post.getId(), post);

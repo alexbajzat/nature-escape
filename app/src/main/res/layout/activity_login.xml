@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="center"
         android:padding="20dp">
 
         <EditText
@@ -33,5 +33,12 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/user_login_button" />
+
+        <CheckBox
+            android:id="@+id/keep_logged_check"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keep me logged in" />
     </LinearLayout>
+
 </LinearLayout>
